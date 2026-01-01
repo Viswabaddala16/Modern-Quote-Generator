@@ -1,4 +1,4 @@
-# 💡 Modern AI Quote Generator (Hybrid Edition)
+## 💡 Modern AI Quote Generator (Hybrid Edition)
 
 A sleek, high-performance quote discovery app built with React 19, Vite 7, and Tailwind CSS v4. This version features a Hybrid Data Engine that intelligently switches between live API data and a custom local database for offline resilience.
 
@@ -13,28 +13,30 @@ Intelligent Non-Repeat Logic: Implements a custom filtering algorithm to ensure 
 
 **Layout Stability:** min-h-[420px] container logic prevents "jumpy" UI shifts when switching between short and long text snippets.
 
-# 🚀 Getting Started
+## 🚀 Getting Started
 
 **Prerequisites**
 
-Ensure you have Node.js v22.12.0 or higher installed.
+Ensure you have **Node.js v22.12.0** or higher installed.
 Installation
 
 **Clone the repository:**
-
+```bash
 git clone (https://github.com/Viswabaddala16/Modern-Quote-Generator)
 cd my-quote-generator
-Use code with caution.
+```
 
 **Install dependencies:**
+```bash
 npm install
-Use code with caution.
+```
 
 **Run the development server:**
-bash
+```bash
 npm run dev
+```
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Frontend: React 19 (Hooks & Async Fetch Pattern)
 Styling: Tailwind CSS v4 (Modern JIT Engine)
 Build Tool: Vite 7
@@ -43,7 +45,7 @@ Local Storage: Custom quotesData.js architecture
 
 # 📂 Project Structure
 
-
+```text
 src/
 ├── data/
 │   └── quotesData.js   # Custom "Plan B" local database & Reference array
