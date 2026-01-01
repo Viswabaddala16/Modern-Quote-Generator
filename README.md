@@ -1,54 +1,52 @@
-# 💡 Modern AI Quote Generator
+# 💡 Modern AI Quote Generator (Hybrid Edition)
 
-A sleek, responsive, and high-performance quote discovery app built with **React 19**, **Vite**, and **Tailwind CSS v4**. This project fetches live data from an external API and delivers it through a premium Glassmorphism UI.
+A sleek, high-performance quote discovery app built with React 19, Vite 7, and Tailwind CSS v4. This version features a Hybrid Data Engine that intelligently switches between live API data and a custom local database for offline resilience.
 
-![React](img.shields.io)
-![Tailwind](img.shields.io)
-![Vite](img.shields.io)
+# ✨ Key Features
 
-## ✨ Key Features
+**Hybrid Quote Engine:** Prioritizes live data from the DummyJSON API but automatically switches to a local custom database if the network is unavailable.
+Intelligent Non-Repeat Logic: Implements a custom filtering algorithm to ensure the same quote/code snippet never appears twice in a row.
 
--   **Live API Integration**: Fetches real-time quotes from the [DummyJSON API](dummyjson.com).
--   **Stable Layout**: Uses fixed aspect-ratio logic to prevent "layout shift" when switching between short and long quotes.
--   **Glassmorphism UI**: High-end design featuring backdrop blurs, subtle borders, and 2025-standard gradients.
--   **Responsive Design**: Optimized for mobile, tablet, and desktop viewing.
--   **Lazy Initialization**: Efficiently handles initial state to provide a seamless first-paint experience.
+**Resilient UI State:** Features a loading "Chasing Wisdom" state and smooth opacity transitions to handle API latency.
 
-## 🚀 Getting Started
+**Glassmorphism Design:** High-end 2026 aesthetics featuring backdrop blurs, subtle borders, and bg-linear-to-br gradients.
 
-### Prerequisites
+**Layout Stability:** min-h-[420px] container logic prevents "jumpy" UI shifts when switching between short and long text snippets.
 
-Ensure you have **Node.js v22.12.0 or higher** installed.
+# 🚀 Getting Started
 
-### Installation
+**Prerequisites**
 
-1.  **Clone the repository:**
-    ```bash
-    git clone github.com
-    cd my-quote-generator
-    ```
+Ensure you have Node.js v22.12.0 or higher installed.
+Installation
 
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
+**Clone the repository:**
 
-3.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+git clone (https://github.com/Viswabaddala16/Modern-Quote-Generator)
+cd my-quote-generator
+Use code with caution.
 
-## 🛠️ Tech Stack
+**Install dependencies:**
+npm install
+Use code with caution.
 
--   **Frontend:** React 19 (Functional Components & Hooks)
--   **Styling:** Tailwind CSS v4 (Modern Engine)
--   **Build Tool:** Vite 7
--   **API:** [DummyJSON](dummyjson.com)
+**Run the development server:**
+bash
+npm run dev
 
-## 📂 Project Structure
+🛠️ Tech Stack
+Frontend: React 19 (Hooks & Async Fetch Pattern)
+Styling: Tailwind CSS v4 (Modern JIT Engine)
+Build Tool: Vite 7
+API: DummyJSON
+Local Storage: Custom quotesData.js architecture
 
-```text
+# 📂 Project Structure
+
+
 src/
-├── App.jsx        # Main application logic & API integration
-├── index.css      # Tailwind v4 entry point
-└── main.jsx       # React DOM rendering
+├── data/
+│   └── quotesData.js   # Custom "Plan B" local database & Reference array
+├── App.jsx             # Hybrid logic (API Fetch + Local Filter fallback)
+├── index.css           # Tailwind v4 directives
+└── main.jsx            # React root entry point
