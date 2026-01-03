@@ -28,7 +28,7 @@ Use code with caution.
 
 **Install dependencies:**
 npm install
-Use code with caution.
+.
 
 **Run the development server:**
 bash
